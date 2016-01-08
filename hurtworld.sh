@@ -11,7 +11,7 @@ fi
 
 # Backup before updating just to be safe
 saves=$(ls /data/hurtworld/hurtworlddedicated/autosave_* 2> /dev/null | wc -l)
-if [ "$saves"" != "0" ]; then
+if [ "$saves" != "0" ]; then
         echo -e "Backing up autosaves...\n"
 	if [ ! -d /data/hurtworld/backup/ ]; then
 		mkdir /data/ark/backup/
